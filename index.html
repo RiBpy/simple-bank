@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+     <div class="container mt-5">
+         <div class="row justify-content-center" id="fullForm" >
+            <div class="col-md-12">
+                <h2 class="display-4 text-center">Login form</h2>
+            </div>
+             <div class="col-md-6">
+                <img src="img/Riaz.png"  class="img-fluid text-center align-center" style="height:50px; width:50px;"alt="">
+                 <div class="form-group" id="form">                
+                     <label for="" class="lbl">User Name</label>
+                     <input type="text" name="User name" id="usrname" placeholder="User Name" class="form-control">
+                     <label for="" class="passlbl">Password</label>
+                     <input type="password" name="password" placeholder="Password" id="pass" class="form-control">
+                     <input type="button" id="enterBtn"value="Enter" class="btn btn-primary  my-3">
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div id="transaction-area">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 ">
+                        <div class="diposit status bg-success text-center">
+                           <h4>Deposit</h4>
+                           <h2>$<span id="currentDeposit">00</span></h2>
+                        </div>
+                </div>
+                <div class="col-md-4 ">
+                   <div class="withdraw status bg-danger text-center">
+                      <h4>Withdraw</h4>
+                      <h2>$<span id="currentWithdraw">00</span></h2>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="balanace status bg-warning text-center">
+                      <h4>Balance</h4>
+                      <h2>$<span id="currentBalance">00</span></h2>
+                   </div>
+               </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+               <div class="col-md-5 mr-3" id="form">
+                   <div class="form-group">
+                      <h3>Deposit</h3>
+                       <input class=" form-control" type="number" id="addDeposit" placeholder="Amount">
+                       <input type="button" id="depositBtn" value="Deposit" class="btn btn-success mt-3 mb-2">
+                   </div>
+                </div>
+                <div class="col-md-5 ml-3" id="form">
+                   <div class="form-group">
+                       <h3>Withdraw</h3>
+                       <input class=" form-control" type="number" id="withdrawId" placeholder="Amount">
+                       <input type="button"  id="withdrawBtn" value="Withdraw" class="btn btn-danger mt-3 mb-2">
+                   </div>
+                </div>
+            </div>
+        </div>
+
+
+     </div>
+     
+
+    <script src="bank.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+</html>

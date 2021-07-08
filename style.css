@@ -1,0 +1,12 @@
+#form{
+    box-shadow:5px 5px 5px gray;
+}
+.status{
+    border-radius:10px;
+    margin:0 20px;
+    padding:20px;
+    color:white;
+}
+#transaction-area{
+    display:none;
+}
